@@ -217,7 +217,7 @@
   - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/8ee1cd89-4c93-4900-b631-25f0eace4b01)
 - 新增欄位
   - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/581e037d-4b6f-4314-97d0-225b9c1d1ea3)
-- 下載後，修改內容，進入 modesl.py
+- 下載後，修改內容，進入 models.py
   - 目的：每次都只顯示有標記成 Only 的條文
     - 如果新增的內容標示為 only = True 則自動將其他的內容設定為 Fasle
 ```
