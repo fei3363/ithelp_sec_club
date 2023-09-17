@@ -261,7 +261,9 @@ def regulation_pre_save(sender, instance, **kwargs):
     -  ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/0bcc4aae-150e-46a2-9ea0-a556bea1cfc7)
   - 更新 `python3 manage.py migrate`
     - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/a69ec09f-1f20-4be8-86fb-b8fb5df64162)
-  - 開啟 server
+  - 開啟 server `python3 manage.py runserver`
+    - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/4274d957-772f-4917-bb1d-8c5543d6e01a)
+  - 開啟瀏覽器
     - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/8d211a0d-6ae7-423a-9fa0-fbb0d0d28927)
   - 新增第一條
     - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/1cf33bb3-8dee-4acc-9250-25439f6a3e36)
