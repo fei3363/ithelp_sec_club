@@ -65,9 +65,57 @@
 
 
 ## 社團系統目前功能盤點
-
 - 友站連結功能
 - 社團章程功能
 - 課程管理功能
 - 歷屆幹部功能
 - 歷史計劃書功能
+
+## 社團系統: 新增社團活動功能
+
+### 資料庫設定
+
+```
+from django.db import models
+
+class Album(models.Model):
+    title = models.CharField(max_length=200)  # 活動名稱
+    date = models.DateField()  # 日期
+    session = models.PositiveIntegerField()  # 屆數
+
+class Photo(models.Model):
+    album = models.ForeignKey(Album, related_name='photos', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='albums/photos/')  # 照片
+    caption = models.TextField(blank=True, null=True)  # 照片的描述或標題
+```
+
+### 建立
+
+1. 新增 app Album
+- ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/47e84201-dab9-4a05-8f01-4e2c460226c6)
+2. 新增 models Album
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/4e198a46-87f2-4f81-b544-5ad2bb2e1c0a)
+3. 新增欄位
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/3e89702b-ee23-49e2-a8bb-153e98393f8e)
+4. 新增 models Album
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/435c0264-2316-4b8a-a5df-84f55b9a4eb0)
+
+
+### 部署
+`python3 manage.py makemigrations`
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/9388cd85-9cd1-4490-9b1f-7cf7eaad004a)
+
+`python3 manage.py migrate`
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/452ddc1e-249a-4e8e-bdf2-c99f9d166a7d)
+
+
+![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/70f919e9-5f52-4d32-a544-7b9ed1f9a034)
+
+
+### 建立
+- 新增相簿
+  - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/990b1b75-784c-4984-9b73-b6a6bdde2c4a)
+- 新增照片
+  - ![image](https://github.com/fei3363/ithelp_sec_club/assets/82772249/17747020-4a3f-4607-81fc-87903ef31a2a)
+
+
