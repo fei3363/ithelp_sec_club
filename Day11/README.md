@@ -1,6 +1,6 @@
-資安社團與資訊社團的成員招募與培訓策略
 
 
+DAY 11 資安社團與資訊社團攻略：成員招募與培訓策略 & 社團系統開發：入社功能
 
 
 
@@ -225,7 +225,7 @@ class RegisterForm(UserCreationForm):
 
 ### 4. 新增 templates
 
-在 `members/templates` 中新增一個 `register.html` 文件：
+在 `members/templates` 中新增一個 `register.html` 檔案：
 
 ```html
 {% extends 'base.html' %}
