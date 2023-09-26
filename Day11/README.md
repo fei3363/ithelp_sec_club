@@ -220,7 +220,7 @@ from .models import CustomUser
 class RegisterForm(UserCreationForm):
     class Meta:
         model = CustomUser
-        fields = ['username', 'password1', 'password2', 'student_id', 'major', 'enrollment_semester', 'bio']
+        fields = ['username', 'password1', 'password2', 'student_id', 'major', 'enrollment_semester']
 ```
 
 ### 4. 新增 templates
